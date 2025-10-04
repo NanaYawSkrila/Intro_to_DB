@@ -1,5 +1,5 @@
 -- FILE: task_4.sql
--- STEP: Print full description of the Books table (fixed for Windows MySQL)
+-- STEP: Print full description of the Books table (all keywords uppercase)
 
 USE alx_book_store;
 
@@ -11,7 +11,6 @@ SELECT
     COLUMN_DEFAULT AS 'Default',
     EXTRA AS 'Extra'
 FROM INFORMATION_SCHEMA.COLUMNS
-WHERE TABLE_SCHEMA='alx_book_store'
-AND TABLE_NAME='Books';
-
+WHERE TABLE_SCHEMA = 'alx_book_store'
+AND TABLE_NAME = 'Books';
 
