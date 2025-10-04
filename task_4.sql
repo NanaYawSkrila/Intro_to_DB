@@ -1,5 +1,5 @@
 -- FILE: task_4.sql
--- STEP: Print full description of the books table (case-insensitive)
+-- STEP: Print full description of the Books table
 
 SELECT 
     COLUMN_NAME AS 'Column',
