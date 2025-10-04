@@ -1,6 +1,3 @@
--- FILE: task_4.sql
--- STEP: Print full description of the Books table (all keywords uppercase)
-
 USE alx_book_store;
 
 SELECT 
