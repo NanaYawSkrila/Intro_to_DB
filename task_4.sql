@@ -1,5 +1,5 @@
 -- FILE: task_4.sql
--- STEP: Print full description of the books table without using DESCRIBE or EXPLAIN
+-- STEP: Print full description of the books table (case-insensitive)
 
 SELECT 
     COLUMN_NAME AS 'Column',
@@ -10,4 +10,5 @@ SELECT
     EXTRA AS 'Extra'
 FROM INFORMATION_SCHEMA.COLUMNS
 WHERE TABLE_SCHEMA = 'alx_book_store'
-AND TABLE_NAME = 'Books';
+AND LOWER(TABLE_NAME) = 'books';
+
