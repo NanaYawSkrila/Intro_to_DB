@@ -1,5 +1,7 @@
 -- FILE: task_4.sql
--- STEP: Print full description of the Books table
+-- STEP: Print full description of the Books table (fixed for Windows MySQL)
+
+USE alx_book_store;
 
 SELECT 
     COLUMN_NAME AS 'Column',
@@ -9,6 +11,7 @@ SELECT
     COLUMN_DEFAULT AS 'Default',
     EXTRA AS 'Extra'
 FROM INFORMATION_SCHEMA.COLUMNS
-WHERE TABLE_SCHEMA = 'alx_book_store'
-AND LOWER(TABLE_NAME) = 'books';
+WHERE TABLE_SCHEMA='alx_book_store'
+AND TABLE_NAME='Books';
+
 
