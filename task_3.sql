@@ -1,4 +1,7 @@
 -- FILE: task_3.sql
--- STEP: List all tables in a database (database passed as argument)
+-- STEP: List all tables in the alx_book_store database
+
+USE alx_book_store;
 
 SHOW TABLES;
+
